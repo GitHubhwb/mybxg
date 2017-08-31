@@ -1,4 +1,7 @@
-define(['jquery','template','bootstrap'],function($,template){
+define(['jquery','template','util','bootstrap'],function($,template,util){
+	// console.log(location.pathname);
+	//左侧列表高亮显示 
+	util.setMenu(location.pathname);
    // console.log(123);
    //调用后台接口，获取列表数据
    $.ajax({
@@ -28,7 +31,7 @@ define(['jquery','template','bootstrap'],function($,template){
          	dataType:'json',
          	success:function(data){
               //解析数据，渲染页面
-              console.log(data);
+              // console.log(data);
               var html=template('modalTpl',data.result);
               $('#modalInfo').html(html);
               //显示弹窗
@@ -55,6 +58,7 @@ define(['jquery','template','bootstrap'],function($,template){
        			if(data.code==200){
          		//修改当前的状态
          		td.attr('data-status',data.result.tc_status);
+
          		//修改文字信息
          		if(data.result.tc_status==0){
          			$(that).html('注 销');
