@@ -4,9 +4,17 @@ require.config({
 		jquery:'jquery/jquery',
 		cookie:'jquery-cookie/jquery.cookie',
 		template:'artTemplate/template-web',
+		bootstrap:'bootstrap/js/bootstrap.min',
 		common:'../js/common',
 		login:'../js/login',
         teacherlist:'../js/teacher-list'
+	},
+	//做兼容
+	shim:{
+      bootstrap:{
+      	//依赖
+      	deps:['jquery']
+      }
 	}
 });
 
