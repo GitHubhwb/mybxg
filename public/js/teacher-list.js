@@ -1,4 +1,6 @@
 define(['jquery','template','util','bootstrap'],function($,template,util){
+  var ret=util.qs('age');
+  console.log(ret);
 	// console.log(location.pathname);
 	//左侧列表高亮显示 
 	util.setMenu(location.pathname);

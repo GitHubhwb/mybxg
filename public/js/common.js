@@ -1,4 +1,5 @@
 define(['jquery','cookie'],function($){
+	
    // NProgress.start();
    // NProgress.done();
    
