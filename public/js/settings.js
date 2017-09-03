@@ -1,4 +1,4 @@
-define(['jquery','template','util','uploadify','datepicker','language','region'],function($,template,util){
+define(['jquery','template','util','ckeditor','uploadify','datepicker','language','region'],function($,template,util,CKEDTOR){
    util.setMenu('/main/index');
    $.ajax({
    	 type:'get',
@@ -27,6 +27,8 @@ define(['jquery','template','util','uploadify','datepicker','language','region']
          $('#pcd').region({
             url:'/public/assets/jquery-region/region.json'
          });
+         //处理文本域个人介绍
+         CKEDTOR.replace('ckeditor');
    	 } 
    });
 });
