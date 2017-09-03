@@ -1,0 +1,11 @@
+define(['jquery'],function($){
+  //控制遮罩显示
+  $(document).ajaxStart(function(){
+  	$('.overlay').show();
+  });
+  //控制遮罩隐藏
+  $(document).ajaxStop(function(){
+  	setTimeout(function(){},1500);
+  	$('.overlay').hide();
+  })
+});
