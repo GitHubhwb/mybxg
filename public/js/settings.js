@@ -44,6 +44,7 @@ define(['jquery','template','util','ckeditor','uploadify','datepicker','language
                var d=$('#d options:selected').text();
                var hometown=p+'|'+c+'|'+d;
                 $(this).ajaxSubmit({
+                  itemTemplate:'<span></span>',
                   type:"post",
                   url:'/api/teacher/modify',
                   data:{tc_hometown:hometown},
