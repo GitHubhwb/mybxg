@@ -20,7 +20,9 @@ require.config({
 		teacheradd:'../js/teacher-add',
 		util:'../js/util',
 		settings:'../js/settings',
-		states:'../js/states'
+		states:'../js/states',
+		courseadd:'../js/courseadd',
+		courselist:'../js/courselist'
 	},
 	//做兼容
 	shim:{
