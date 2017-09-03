@@ -31,7 +31,7 @@ define(['jquery','cookie'],function($){
     }
     //获取登录信息
     var loginInfo=$.cookie('loginInfo');
-    var info=JSON.parse(loginInfo);
+    var info=loginInfo?JSON.parse(loginInfo):{};
     $('.profile img').attr('src',info.tc_avatar);
     $('.profile h4').html(info.tc_name);
 })
