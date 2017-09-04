@@ -23,7 +23,8 @@ require.config({
 		states:'../js/states',
 		courseadd:'../js/courseadd',
 		courselist:'../js/courselist',
-		coursebasic:'../js/coursebasic'
+		coursebasic:'../js/coursebasic',
+		coursepicture:'../js/coursepicture'
 	},
 	//做兼容
 	shim:{
