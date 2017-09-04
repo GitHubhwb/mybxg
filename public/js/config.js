@@ -22,7 +22,8 @@ require.config({
 		settings:'../js/settings',
 		states:'../js/states',
 		courseadd:'../js/courseadd',
-		courselist:'../js/courselist'
+		courselist:'../js/courselist',
+		coursebasic:'../js/coursebasic'
 	},
 	//做兼容
 	shim:{
