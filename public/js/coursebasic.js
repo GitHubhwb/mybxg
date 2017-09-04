@@ -51,7 +51,6 @@ define(['jquery','template','util','ckeditor','validate','form'],function($,temp
 					}
 					//提交表单
 					$(this).ajaxSubmit({
-						width:80,
 						type:'post',
 						url:'/api/course/update/basic',
 						data:{cs_id:csId},
