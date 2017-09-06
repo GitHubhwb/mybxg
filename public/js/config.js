@@ -13,6 +13,7 @@ require.config({
 		region:'jquery-region/jquery.region',
 		ckeditor:"ckeditor/ckeditor",
 		nprogress:'nprogress/nprogress',
+		jcrop:'jcrop/js/Jcrop',
 		common:'../js/common',
 		login:'../js/login',
 		index:'../js/index',
@@ -24,7 +25,8 @@ require.config({
 		courseadd:'../js/courseadd',
 		courselist:'../js/courselist',
 		coursebasic:'../js/coursebasic',
-		coursepicture:'../js/coursepicture'
+		coursepicture:'../js/coursepicture',
+		courselesson:'../js/courselesson'
 	},
 	//做兼容
 	shim:{
@@ -44,6 +46,9 @@ require.config({
       },
       ckeditor:{
       	exports:'CKEDITOR'
+      },
+      jcrop:{
+      	deps:['jquery']
       }
   }
 });
