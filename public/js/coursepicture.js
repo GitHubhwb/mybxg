@@ -39,7 +39,7 @@ define(['jquery','template','util','uploadify','jcrop','form'],function($,templa
 					boxWidth:400
 				},function(){
 					//销毁之前的实例
-					nowCrop && owCrop.destory();
+					nowCrop && nowCrop.destory();
 					//缓冲当前实例
 					nowCrop=this;
 					//设置预览效果  左上角显示图片的宽高
