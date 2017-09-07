@@ -2,7 +2,7 @@ define(['jquery'],function($){
 	return{
 		//设置到导航菜单选中
 		setMenu:function(path){
-			$('.nav a[href="'+path+'"]').addClass('active');
+			$('.navs a[href="'+path+'"]').addClass('active').closest('ul').show();
 		},
 		//获取ul当中的参数值
 		qs:function(key){

@@ -1,4 +1,4 @@
-define(['jquery','template','util','bootstrap'],function($,template,util){
+define(['jquery','template','util','bootstrap','states'],function($,template,util){
 	var ret=util.qs('age');
 	console.log(ret);
 	// console.log(location.pathname);
